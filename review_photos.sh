@@ -1,7 +1,7 @@
-keep="mv %F backup/"
-delete="mv %F to_delete/"
-add_to_pano_grp="echo mv %F to_pano/XXX/ >> pano_grps.txt"
-start_pano_grp="echo 'mkdir to_pano/XXX\nmv %F to_pano/XXX/' >> pano_grps.txt"
+keep="mv -n %F backup/"
+delete="mv -n %F to_delete/"
+add_to_pano_grp="echo mv -n %F to_pano/XXX/ >> pano_grps.txt"
+start_pano_grp="echo 'mkdir to_pano/XXX\nmv -n %F to_pano/XXX/' >> pano_grps.txt"
 
 while true; do
     read -p "What do you want to review? [R]eview, [U]pload, or [O]ther to specify: " choice
