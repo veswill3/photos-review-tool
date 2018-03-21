@@ -14,6 +14,7 @@ while true; do
 done
 
 feh -Fd --draw-tinted \
+--sort mtime --reverse \
 --action1 "$add_to_pano_grp" \
 --action2 "$start_pano_grp" \
 --action3 "$delete" \
