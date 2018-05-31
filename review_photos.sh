@@ -1,5 +1,5 @@
-keep="mv -n %F backup/"
-delete="mv -n %F to_delete/"
+keep="mv -nv %F backup/"
+delete="mv -nv %F to_delete/"
 add_to_pano_grp="echo mv -n %F to_pano/XXX/ >> pano_grps.txt"
 start_pano_grp="echo 'mkdir to_pano/XXX\nmv -n %F to_pano/XXX/' >> pano_grps.txt"
 
